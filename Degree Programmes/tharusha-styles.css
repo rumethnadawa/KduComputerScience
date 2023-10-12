@@ -1,0 +1,218 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: hsl(236, 57%, 28%);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    position: relative; /* Make sure the header is a positioning context */
+}
+
+.container {
+    position: relative; /* Make the container a positioning context */
+}
+
+.logo-link {
+    position: absolute;
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the right */
+    display: inline-block; /* Make sure the link behaves like an inline block */
+}
+
+.nav-bar{
+    text-align: right;
+    color: #ffffff;
+    padding-right: 20px;
+    
+}
+
+.home-link{
+    color: #ffffff;
+}
+
+.home-link:hover{
+    color: red;
+    font-style: italic;
+    font-;
+}
+
+
+h1{
+    margin-top: 80px;
+    margin-bottom: 50px; /* Add some margin at the bottom to create space */
+}
+
+.about-head{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    color: #225980; /* Change this to the color you prefer (hex, rgb, or color name) */
+}
+
+.about-head:hover{
+    color: #00ffff;
+}
+
+.down-load{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.download:hover{
+    color: red;
+    font-style: italic;
+}
+
+main {
+    padding: 20px;
+}
+
+.about-info{
+    font-size: large;
+}
+
+.first-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left{
+    flex: 1;
+    margin-right: 50px; /* Adjust the margin as needed */
+}
+
+.right img {
+    border-radius: 8px; /* Add rounded corners to the image */
+    width: 100%; /* Make sure the image takes up the full width of its container */
+}
+
+
+footer {
+    background-color: #333;
+    font-size: smaller;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+
+    
+}
+
+.footer-bottom{
+    overflow: hidden;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+/* Define a style for the anchor (hyperlink) element */
+a {
+    color: #0077cc; /* Change this to the color you prefer (hex, rgb, or color name) */
+    text-decoration: none; /* Optional: Remove underline */
+}
+
+/* Define a style for the anchor when hovered */
+a:hover {
+    color: #0f2c3a; /* Change this to the color you prefer on hover */
+}
+
+#goTopButton {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: hsl(236, 57%, 28%);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#goTopButton:hover {
+    background-color: #0392da;
+}
+
+.course-curriculum{
+    text-align: center;
+    font-size:xx-large;
+    font-weight: bolder;
+    font-style: italic;
+    color: #04107c;
+}
+
+.course-curriculum:hover{
+    color: #0597ff;
+}
+
+.sem:hover{
+    color: red;
+}
+
+h3{
+    text-align: center;
+}
+
+.course-table {
+    border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+}
+
+th, td {
+    border: 10px solid #0a0a0a;
+    text-align: center;
+    padding: 8px;
+}
+
+th {
+    background-color: #88b1e7;
+}
+
+
+/* Alternate row background color for better readability */
+tr:nth-child(even) {
+    background-color: #c7dcf1;
+}
+
+/* Hover effect on rows */
+tr:hover {
+    background-color: #095afc;
+}
+
+/* Style for table cells (Course Code and Course Title) */
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+/* Border and spacing between cells */
+th, td {
+    border: 1px solid #000000;
+}
+
+.go-to{
+    text-align: right;
+}
+
+.next-degree{
+    color: #023f6b;
+}
+
+.next-degree:hover{
+    color: #19e0fa;
+}
+
+.elective{
+    text-align: left;
+    font-weight: bolder;
+}
+
+.elective-row:hover{
+    background-color: Red;
+    font-style: italic;
+}

@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Staff</title>
+    <style>
+        
+        table {
+            
+            border-collapse: collapse;
+            margin-left: 20px;
+            width: 100%;
+        }
+
+        th, td {
+            border: 1px solid #ffffff;
+            padding: 8px;
+            text-align: left;
+       
+        }
+
+        th {
+            background-color: #ffffff;
+        }
+         /* Add a media query for responsiveness */
+         @media (max-width: 600px) {
+            table, thead, tbody, th, td, tr {
+                display: block;
+            }
+
+            th {
+                display: none;
+            }
+
+            td {
+                border: none;
+                border-bottom: 1px solid #ffffff;
+                position: relative;
+                padding-left: 50%;
+                text-align: left;
+            }
+
+            td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                content: attr(data-label);
+            }
+        }
+ 
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffffff;
+        }
+
+        .details-box {
+            position: relative;
+            width: 300px;
+            cursor: pointer;
+            overflow: hidden;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .details-content {
+            padding: 10px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .details-box:hover {
+            transform: scale(1.1);
+        }
+
+        .details-box.active .details-content {
+            background-color: #37065c;
+            color: #ffffff;
+        }
+        h3 {
+            text-align: right;
+            font-size: 12px;
+        }
+
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+        }
+
+        header {
+            background-color: #37065c;
+            color: #ffffff;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ffffff;
+            padding: 10px;
+        }
+
+        nav a {
+            color: #37065c;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            background-color: #37065c;
+            color: #ffffff;
+        }
+        footer {
+            background-color: #37065c;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    
+    
+    <table  border="0" align="center"  style="background-color:rgb(255, 255, 255); position:absolute; top: 10px;left:5px;">
+        <tr>
+            <td colspan="4">
+                <header>
+                    <div class="container">
+            
+                        <div class="overlay" data-overlay></div>
+                  
+                        <a href="#" class="logo-link">
+                          <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\kdu-logo2.png"alt="KDU Logo" class="logo">
+                        </a>
+                  
+                        
+                      </div>
+                    
+                    <h1>Department of Computer Science</h1>
+                    
+                 <section>
+                     <p style="color:yellow"class="nav-bar"><a class="home-link" href="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\index.html"><b>Home</b>> </a></p>
+                </section>       
+            
+                </header>
+            
+              
+            </td>
+        </tr>
+          <td align="left"><font style="font-family:calibri ; font-size:13pt"></font><h1>Academic Staff</h1></td>
+            
+        </tr>
+        <tr>
+
+        <td><div class="details-box" onclick="goToProfile1()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content">
+                <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\dr-asela.jpg" width="47%" align="center" style="padding-left: 20%;"> 
+        <h2>Dr. ADAI Gunasekara</h2>
+        <p>Dean – Faculty of Computing</p><br>
+		<p><strong>Position:</strong> Senior Lecturer Grade I</p>
+        <p><strong>Email:</strong><br> <a href="mailto:asela@kdu.ac.lk">asela@kdu.ac.lk</a> </p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile2()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content">
+                <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\Dr._LP_Kalansooriya.jpg" width="50%" align="center" style="padding-left: 20%;" >
+        <h2>Dr. LP Kalansooriya</h2>
+        <p>HOD – Department of Computer Science</p>
+        <p><strong>Position:</strong> Senior Lecturer Grade II</p>
+        <p><strong>Email:</strong><br> <a href="mailto:pradeepkalansooriya@kdu.ac.lk"> pradeepkalansooriya@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile3()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content">
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\Dr.-Mrs.-Wijendra-Gunathilake.jpg" width="50%" align="center" style="padding-left: 20%;">
+        <h2>Dr. HRWP Gunathilake</h2>
+        <p><strong>Position:</strong> Senior Lecturer Grade II</p><br><br>
+        <p><strong>Email:</strong><br>  <a href="mailto:wijendrapg@kdu.ac.lk"> wijendrapg@kdu.ac.lk</a> </p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile4()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content">
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\download.jpg" width="50%" align="center"style="padding-left: 20%;">
+        <h2>Mr. PPNV Kumara</h2>
+        <p><strong>Position:</strong> Senior Lecturer Grade II<br>
+            On Study Leave</p><br>
+        <p><strong>Email:</strong><br> <a href="mailto:nandana@kdu.ac.lk">nandana@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td></tr>
+
+    <tr>
+        <td><div class="details-box"  onclick="goToProfile5()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content">
+                <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\images 445.jpg" width="50%" align="center"style="padding-left: 20%;">
+        <h2>Mrs.SCM De S Sirisuriya</h2>
+		<p><strong>Position:</strong> Senior Lecturer Grade II</p>
+        <p><strong>Email:</strong><br><a href="mailto:mihiri@kdu.ac.lk">mihiri@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile6()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content">
+                <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\kaneeka.jpg" width="54%" align="center"style="padding-left: 20%;">
+        <h2>Dr. Kaneeka Vidanage</h2>
+        <p><strong>Position:</strong> Senior Lecturer Grade II</p>
+        <p><strong>Email:</strong><br> <a href="mailto:vidanage_bvki@kdu.ac.lk">vidanage_bvki@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile7()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content">
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\Ms.W-M-Kalani-Sriya-Ilmini.jpg" width="50%" align="center" style="padding-left: 20%;">
+        <h2>Ms. WMKS Ilmini</h2>
+        <p><strong>Position:</strong> Lecturer (Probationary)</p>
+        <p><strong>Email:</strong><br><a href="mailto:kalaniilmini@kdu.ac.lk">kalaniilmini@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile8()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content">
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\pavithra.jpg" width="50%" align="center"style="padding-left: 20%;"><br>
+        <h2>Mrs. MKP Madushanka</h2>
+        <p><strong>Position:</strong> Lecturer (Probationary)<br></p>
+        <p><strong>Email:</strong><br> <a href="mailto:pavithram@kdu.ac.lk">pavithram@kdu.ac.lk</a> </p>
+        <h3> Click to go Profile ></h3>
+    </div></td></tr>
+
+    <tr>
+        <td><div class="details-box" onclick="goToProfile9()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content">
+                <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\Uwanthika-1-231x300.jpg" width="52%" align="center"style="padding-left: 20%;">
+        <h2>Ms. GAI Uwanthika</h2>
+		<p><strong>Position:</strong> Lecturer (Probationary)</p>
+        <p><strong>Email:</strong><br><a href="mailto:Uwanthika.gai@kdu.ac.lk">Uwanthika.gai@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile10()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content"><br>
+               <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\drani.jpg" width="41%" align="center"style="padding-left: 25%;"><br>
+        <h2>Ms. DV Dharani Abeysinghe</h2>
+        <p><strong>Position:</strong> Lecturer (Probationary)</p>
+        <p><strong>Email:</strong><br><a href="mailto:abeysinghe.dvds@kdu.ac.lk"> abeysinghe.dvds@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile11()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content"><br><br>
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\kaushalya.jpg" width="47%" align="center"style="padding-left: 20%;"><br>
+        <h2>Ms.KG Kaushalya Abeywardhane</h2>
+        <p><strong>Position:</strong> Lecturer (Probationary)</p>
+        <p><strong>Email:</strong><br><a href="mailto:abeywardhane.kgk@kdu.ac.lk">abeywardhane.kgk@kdu.ac.lk</a></p>
+        <h3> Click to go Profile ></h3>
+    </div></td>
+
+        <td><div class="details-box" onclick="goToProfile12()" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content">
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\sathsara.jpg" width="50%" align="center"style="padding-left: 20%;"><br>
+        <h2>Ms. DMS Sathsara</h2>
+        <p><strong>Position:</strong> Temporary Instructor<br></p>
+        <p><strong>Email:</strong><br><a href="mailto:sathsara.dms@kdu.ac.lk">sathsara.dms@kdu.ac.lk</a> </p>
+        <h3> Click to go Profile ></h3>
+    </div></td></tr>
+    <tr>
+            
+        <td align="left"><font style="font-family:calibri ; font-size:13pt"></font><h1>Non - Academic Staff</h1></td>
+        
+    </tr>
+    <tr>
+        <td><div class="details-box"  onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+            <div class="details-content"><br>
+               <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\Vidushani-Ponnamperuma.jpg" width="50%" align="center"style="padding-left: 20%;"><br>
+        <h2>Ms. Vidushani Ponnamperuma</h2>
+        <p><strong>Position:</strong> Technical Officer – Grade III</p>
+        <p><strong>Email:</strong><br><a href="mailto:to_Vidushani@kdu.ac.lk"> to_Vidushani@kdu.ac.lk</a></p>
+    </div></td>
+
+        <td><div class="details-box"  onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content"><br>
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\GNMR-Senarathne.jpg" width="52%" align="center"style="padding-left: 20%;"><br>
+        <h2>Mr. GNMR Senarathne</h2>
+        <p><strong>Position:</strong> Management Assistant – Grade II</p>
+        <p><strong>Email:</strong><br><a href="mailto:milindur@kdu.ac.lk">milindur@kdu.ac.lk</a></p>
+    </div></td>
+
+        <td><div class="details-box"  onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+           <div class="details-content"><br>
+            <img src="D:\Rumeth Jayasinghe\Semester 2\CS1082-Web Development\Our Project\desinic-master\FOC project\FOC project\images\TRK-Gamage.jpg"width="50%" align="center"style="padding-left: 20%;"><br>
+        <h2>Mr. TRK Gamage</h2>
+        <p><strong>Position:</strong> Lab Attendant – Upper Grade<br></p><br>
+        <p><strong>Email:</strong><br><a href="mailto:ruwan.kumara@kdu.ac.lk">ruwan.kumara@kdu.ac.lk</a> </p>
+    </div></td></tr>
+    <tr>
+        <td colspan="4">
+            <br><br><br><footer>
+                &copy; 2023 Computer Science Department. All Rights Reserved.
+            </footer>
+        </td>
+    </tr>
+
+
+</table>
+
+
+    <script>
+        function goToProfile1() {
+            // Replace 'profile.html' with the actual URL of your profile page
+            window.location.href = 'https://foc.kdu.ac.lk/computer_science/dr-adai-gunasekara/';
+        }
+
+        function zoomIn(element) {
+            element.classList.add('active');
+        }
+
+        function zoomOut(element) {
+            element.classList.remove('active');
+        }
+    </script>
+
+<script>
+    function goToProfile2() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/dr-pradeep-kalansooriya/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile3() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/dr-wijendra-gunathilake/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile4() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/mr-nandana-kumara/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile5() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/mrs-mihiri-sirisuriya/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile6() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/dr-kaneeka-vidanage/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile7() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/ms-kalani-ilmini/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile8() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/mrs-pavithra-madushanka/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile9() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/ms-isuri-uwanthika/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile10() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/ms-dv-dharani-abeysinghe/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile11() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/ms-kg-kaushalya-abeywardhane/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+
+<script>
+    function goToProfile12() {
+        // Replace 'profile.html' with the actual URL of your profile page
+        window.location.href = 'https://foc.kdu.ac.lk/computer_science/ms-dms-sathsara/';
+    }
+
+    function zoomIn(element) {
+        element.classList.add('active');
+    }
+
+    function zoomOut(element) {
+        element.classList.remove('active');
+    }
+</script>
+    <!-- Add more staff members as needed -->
+    
+
+</body>
+
+</html>
+
+
